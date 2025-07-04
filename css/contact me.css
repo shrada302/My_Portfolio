@@ -1,0 +1,329 @@
+:root {
+  --search: #D09A8B;
+  --home: #F9E0D9;
+  --nav: #F8F1F2;
+  --written: #090C10;
+  --inrectcircle: #FFD5D5;
+  --incontact: #FFB4BF;
+  --button: #D9D9D9;
+  --socailmedia: #887D7A;
+  --darklight:#251618;
+  --darkpeach:#9D432A;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+header {
+  background-color: var(--nav);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+ header .menu-toggle {
+     display: none;
+     cursor: pointer;
+     padding-top: inherit;
+     float: right;
+ }
+   
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap; 
+}
+
+
+nav .top img {
+  height: 70px;
+  margin-left: 35px;
+}
+
+
+nav .buttom ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  padding-right: 45px;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+nav .buttom ul li {
+  list-style: none;
+}
+
+nav .buttom ul li a {
+  text-decoration: none;
+  color: var(--written);
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+nav .buttom ul li a {
+  position: relative;
+  transition: color 0.5s ease;
+}
+
+nav .buttom ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--written); 
+  transition: width 0.3s ease;
+}
+
+nav .buttom ul li a:hover {
+  color: #5d1704;
+}
+
+nav .buttom ul li a:hover::after {
+  width: 100%;
+  background-color:#5d1704 ;
+}
+
+
+
+/* main */
+
+main {
+  color: var(--darklight);
+  height: 100vh;
+}
+
+.container {
+     display: flex;
+     padding: 50px 40px;
+     align-items: center;
+     justify-content: space-between;
+     
+    }
+    
+    section.container {
+      height: 100vh;
+      width: 100%;
+      
+    }
+    
+    .container h1 {
+      font-family: Montserrat;
+     font-size: 60px;
+     font-weight: 900;
+     color: #5d1704;
+
+     
+    }
+    
+    .child {
+      max-width: 50%;
+    }
+    
+    .container h3 {
+     font-family: Poppins;
+     font-size: 30px;
+     font-weight: 200;
+     color: var(--darkpeach);
+    }
+    
+    .container p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+      font-weight: 400;
+      color: var(--lightdark);
+    }
+    
+    .image img {
+     height: 100vh;
+     float: left;
+     padding-top: 0px;
+     padding-right: 0px;
+     border-image: 50%;
+    }
+   img{
+    border-radius: 30px;;
+   }
+
+
+
+   /* main..about me part */
+    
+   h3.abc{
+    font-size: 200px;
+   }
+   div.me{
+        display: grid;
+    justify-items: center;
+   }
+
+   div.me1{
+   background-color: var(--incontact);
+   border-radius: 30px;
+   padding: 30px;
+   }
+@media (max-width: 768px) {
+
+  header {
+  background-color: var(--nav);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 430px;
+  overflow: hidden;
+}
+  header i{
+    overflow: hidden;
+  
+  }
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav .buttom ul {
+    flex-direction: column;
+    width: 100%;
+   gap: 30px;
+   z-index: 10px;
+   position: absolute;
+   background-color: var(--nav);
+    overflow: hidden;
+  }
+
+
+
+
+
+  nav .top img {
+    margin: auto;
+  }
+   header .menu-toggle {
+     display: block;
+     cursor: pointer;
+     padding-top: inherit;
+     float: right;
+     padding-top: 20px;
+    padding-right: 10px;
+    overflow: hidden;
+     transition: all 1s;
+   }
+   
+   
+   nav .buttom ul li a:hover {
+       color: #5d1704;
+       list-style: none;
+   }
+
+  ul#menu-toggle{
+      transition: max-height 0.4s ease, opacity 0.4s ease
+  }
+
+
+  form h4{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin: 30px 50px;
+   color: var(--darkpeach);
+
+}
+}
+
+section,.container{
+  height: 200px;
+  width: 200px;
+}
+body{
+    background-color:#fcdad1;
+}
+
+main{
+  height: 5cap;
+  width: 5px;
+}
+
+div.share{
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+   border-radius: 19px; 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-45%, -40%);
+   background-color: #FFB4BF;
+   
+
+
+}
+
+div.share:hover{
+    box-shadow:#712e39;
+     box-shadow:0px 20px 30px #403514;
+   transition: all 0.3s ease;
+}
+form h4{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin: 0px 80px;
+   color: var(--darkpeach);
+
+}
+
+
+form input{
+    font-size:larger;
+    border-radius: 4px;
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+
+label{
+    color: var(--written);
+    font-size: larger;
+
+}
+
+textarea{
+    border-radius: 10px;
+    margin: 5px;
+}
+
+button{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin: 0px 170px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+  
+}
+
+button:hover{
+    background-color:var(--darkpeach);
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+}
