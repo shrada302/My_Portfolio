@@ -1,14 +1,14 @@
 :root {
   --search: #D09A8B;
   --home: #F9E0D9;
-  --nav: #F8F1F2;
+  --nav:#EED6D3;
   --written: #090C10;
   --inrectcircle: #FFD5D5;
   --incontact: #FFB4BF;
   --button: #D9D9D9;
   --socailmedia: #887D7A;
-  --darklight:#251618;
-  --darkpeach:#9D432A;
+  --darklight: #251618;
+  --darkpeach: #9D432A;
 }
 
 * {

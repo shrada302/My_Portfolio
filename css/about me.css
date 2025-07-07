@@ -1,7 +1,7 @@
 :root {
   --search: #D09A8B;
   --home: #F9E0D9;
-  --nav: #F8F1F2;
+  --nav:#EED6D3;
   --written: #090C10;
   --inrectcircle: #FFD5D5;
   --incontact: #FFB4BF;
@@ -120,9 +120,9 @@ main {
   max-width: 1200px;
   width: 100%;
   padding: 40px;
-  background-color: var(--inrectcircle);
+  background-color: #f8f1f2;
   border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 5px #a0523d;
 }
 
 .about-img img {
@@ -181,7 +181,7 @@ p {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  border-left: 5px solid #9D432A;
+  border-left: 5px solid #a0523d;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -230,7 +230,7 @@ p {
 
   ul#menu-toggle {
     transition: max-height 0.4s ease, opacity 0.4s ease;
-            width:400px;
+            width:390px;
   }
 
   nav .buttom ul {
@@ -257,7 +257,7 @@ p {
 
 
 footer {
-  background-color: var(--darkpeach);
+  background-color: #A0523D;
   /* Deep brown-orange tone */
   color: #fff2e6;
   /* Light cream text */
