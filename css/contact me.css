@@ -179,15 +179,7 @@ main {
    }
 @media (max-width: 768px) {
 
-  header {
-  background-color: var(--nav);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 430px;
-  overflow: hidden;
-}
-  header i{
+   header i{
     overflow: hidden;
   
   }
@@ -231,8 +223,7 @@ main {
    }
 
   ul#menu-toggle{
-      transition: max-height 0.4s ease, opacity 0.4s ease;
-      
+      transition: max-height 0.4s ease, opacity 0.4s ease
   }
 
 
