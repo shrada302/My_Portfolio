@@ -254,6 +254,9 @@ p {
   }
 }
 
+.cv-resume:hover{
+  border: none;
+}
 
 footer {
   background-color: #A0523D;
